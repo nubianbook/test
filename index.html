@@ -1,0 +1,410 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Movie Tracker</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		<br />
+			
+			<p align="center">
+			<img src="images/cta_logo.png" width="200px" height="200px">
+			  
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "additem.html">Click to Enter</a>
+		   </p>
+		   
+		   	<div data-role="content" data-add-back-btn="true">
+
+		   	<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#under_construction">
+			      <img src="images/disaster.png" width="60px" height="104">
+			      	<h3>SiFi</h3>
+			      	   <p>This Page is under Construction</p>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#thumbnail_grid">
+			      	<img src="images/misery.png" width="60px" height="104">
+			         <h3>Drama</h3>
+			      		<p>Take a look at the large selection of Movies</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#news_stream"><img src="images/scary.png" width="60px" height="104">
+			         <h3>Streaming Movie News</h3></h3>
+			      		<p>Keep up with latest News and Gossip</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/comedy2.png" width="60px" height="104">
+			         <h3>Comedy</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/family_pic.png" width="60px" height="104">
+			         <h3>Family</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/love.png" width="60px" height="104">
+			         <h3>Romance</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/planet_earth.png" width="60px" height="104">
+			         <h3>Documentary</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		       
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		   </div>
+		
+	</div>
+	</div>
+	
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+			
+		  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- List Inlay -->
+	
+	<div data-role="page" id="listInlay" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2>List Inlay</h2>
+  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible" data-filter="true">
+		      <h3>Sifi</h3>
+		      <p>Back to the Future</p>
+		      <p>2012</p>
+		      <p>Star Trek</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Drama</h3>
+		      <p>Who's Afraid of Virginia Wolf</p>
+		      <p>To Kill a Mockingbird</p>
+		      <p>Whatever Happened to Baby Jane</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Horror</h3>
+		      <p>Screen Theater</p>
+		      <p>The People Under the Stairs</p>
+		      <p>Nightmare on Elm Street</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy</h3>
+		      <p>Around the World in Eighty Days</p>
+		      <p>The Nutty Professor</p>
+		      <p>Blazing Saddles</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Family</h3>
+		      <p>Marmaduke</p>
+		      <p>Shrek</p>
+		      <p>The SandLot</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Romance</h3>
+		      <p>To Sir with Love</p>
+		      <p>Sleepless in Seattle</p>
+		      <p>Pretty Woman</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Documentary</h3>
+		      <p>The History of Baseball</p>
+		      <p>The Tuskegee Airmen</p>
+		      <p>American Experience</p>
+		    </div>
+		    		      		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- Under Construction -->
+	
+	<div data-role="page" id="under_construction" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+		
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+			
+			       <img src="images/cta_logo.png" width="200px" height="200px">
+			       <p>This Page is Under Construction</p>
+			   
+		    </h1>
+		    		   
+		 <br />
+		 <br /> 
+		 </div>
+		
+			
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- Thumbnail_grid -->
+				
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<h2 align="center">Thumbnail Grid</h2>
+			<br />
+		  	<div class="ui-grid-b" data-role="listview" data-filter="true">
+		  	
+				<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama1.png" width="90px" height="160px"><br/>Beautiful Mind<br/> Order Today</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama2.png" width="90px" height="160px"><br/>If Only<br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama3.png" width="90px" height="160px"><br/>Sister's Keeper<br/>On Sale</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama4.png" width="90px" height="160px"><br/>Young Victoria<br/>On Sale</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama5.png" width="90px" height="160px"><br/>88 minutes<br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama6.png" width="90px" height="160px"><br/>Frost/Nixon<br/>On Sale</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama7.png" width="90px" height="160px"><br/>The Road<br/>Sold Out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama8.png" width="90px" height="160px"><br/>Public</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama9.png" width="90px" height="160px"><br/>Funny</div>
+		  	</div>    	
+		  	
+		  	</div> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
+					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+		<div data-role="page" id="news_stream" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#">
+			      <img src="images/face1.png" width="55px" height="55" hspace="5px" vspace="15px">
+			      	<h3>SiFi</h3>
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 8 mins ago   --via Twitter--</small></span>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#">
+			      	<img src="images/face2.png" width="55px" height="55" hspace="5px" vspace="15px">
+			         <h3>Drama</h3>
+			  
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 14 mins ago   --via Scoop.com--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face3.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Horror</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 1 hr ago   --via Twitter--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face4.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Comedy</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 2 hrs ago   --via Facebook--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face5.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Family</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 6 hrs ago   --via Facebook--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face6.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Romance</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 14 hrs ago   --via ImageOff.net--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face7.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+		       <li>
+			      <a href ="#under_construction"><img src="images/face8.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face9.png" width="55px" height="73" >
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+
+
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
+					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		   </div>
+	
+	
+	</div>
+		
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+
+</body>
+</html>
