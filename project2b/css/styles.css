@@ -74,17 +74,6 @@ Feb.23,2012
   			font-size: 14px;
   			color: red;
   }
-  
-  label.error {
-  				display: block;
-  				margin: 10px 0;
-  				margin-left: 10px;
-  				color: #cc0000;
-  }
-  
-  #errorsLink {
-  				display: none;
-  }
      
    p {
    	  font-size: 14px;

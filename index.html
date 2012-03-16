@@ -37,7 +37,7 @@
 			  
 		   </p>
 		   <p id="pg1_link">
-		       <a href = "additem.html">Click to Enter</a>
+		       <a href = "form.html">Click to Enter</a>
 		   </p>
 		   
 		   	<div data-role="content" data-add-back-btn="true">
@@ -97,7 +97,7 @@
 				<ul>
 					<li><a href="#" data-icon="home" class="ui-btn-active">A App</a></li>
 					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
-					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="http://nubianbook.github.com/test/" data-icon="forward">My Page</a></li>
 					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
 				</ul>
 		   </div>
@@ -277,7 +277,7 @@
 				<ul>
 					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
 					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
-					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="http://nubianbook.github.com/test/" data-icon="forward">My Page</a></li>
 					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
 				</ul>
 		</div>
@@ -386,11 +386,102 @@
 				<ul>
 					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
 					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
-					<li><a href="#" data-icon="forward">My Page</a></li>
+					<li><a href="http://nubianbook.github.com/test/" data-icon="forward">My Page</a></li>
 					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
 				</ul>
 		   </div>
+		   </div>
+		   </div>
 	
+	<div data-role="page" id="my_form" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<h2 align="center">Archive Movie Info Here</h2>
+			<br />
+		  	
+		  		<form action="" method="post" id="project3form" data-ajax="true">
+		  			<label for="genre" class="select"></label> 
+						<select name="genre" id="genre" data-theme="b"> 
+							 <option selected value="select" data-role="placeholder">--- Select Genre ---</option> 
+							 <option value="siFi">SiFi</option> 
+							 <option value="drama">Drama</option>
+							 <option value="horror">Horror</option>
+							 <option value="family">Family</option>
+							 <option value="romance">Romance</option>
+							 <option value="documentary">Documentary</option>
+						</select>
+						
+						<br />
+						
+						<div data-role="fieldcontain">
+							<label for="title">Movie Title:</label>
+							<input type="text" name="title" id="title" class="required" placeholder="Movie Title" value=""/>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="mydate">Date Watched:</label>	
+							<input name="mydate" id="mydate" type="date" class="required" data-role="datebox" data-options='{"mode": "calbox", 'calTodayButton': true}'>    			
+						</div>
+						
+				<input type="checkbox" value="download" name="checkbox-1" id="checkbox-0" class="custom" class="required" data-theme="b"/>
+							<label for="checkbox-0">Download</label>
+				<input type="checkbox" value="purchase" name="checkbox-1" id="checkbox-2" class="custom" data-theme="b"/>
+							<label for="checkbox-2">Purchase</label>
+							
+					<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Have you seen this movie before?</legend>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-1">Yes, I have</label>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" data-theme="a"/>
+					     	<label for="radio-choice-2">No, I haven't</label>	
+					</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Would you watch it again?</legend>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-2">Yes, I would</label>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3" data-theme="a"/>
+					     	<label for="radio-choice-3">No, I would not</label>
+					</fieldset>
+					</div>
+				
+						<div data-role="fieldcontain">
+							<label for="slider-1">Input slider:</label>
+							<input type="range" name="slider-1" id="slider-1" value="0" min="0" max="10" data-theme="a" data-track-theme="b" />
+						</div>
+						<div data-role="fieldcontain">
+								<label for="textarea-a">Notes:</label>
+									<textarea name="notes" id="textarea-a" placeholder="Place any notes or comments here for future reference.">
+									</textarea>
+						</div>
+						
+						<div data-role="fieldcontain">
+							<input type="reset" value="reset" data-theme="a"> 
+							<input type="submit" value="submit" data-theme="b">
+		  				</div>
+		  		</form> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/test/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
 	
 	</div>
 		
@@ -402,6 +493,7 @@
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	
 	
